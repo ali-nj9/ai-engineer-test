@@ -8,7 +8,6 @@ Environment setup for my 75-day AI Engineer roadmap.
 - VS Code setup
 - Git + GitHub SSH authentication
 
-
 ## روز ۱ — Variables + Data Types + Strings
 
 ### مفاهیم یاد گرفته شده:
@@ -23,13 +22,12 @@ Environment setup for my 75-day AI Engineer roadmap.
 ### تمرین‌های انجام شده:
 1. Name + Age + Birth Year Calculator
 2. Sentence Analyzer
-3. Temperature Converter (C ↔ F)
+3. Temperature Converter (C to F and F to C)
 4. Full Name Cleaner
 5. BMI Calculator
-6. Calculator (+ - * / ** %)
-7. Unit Converter (km/kg/L)
-8. Bank Interest (Simple + Compound)
-
+6. Calculator
+7. Unit Converter
+8. Bank Interest Simple and Compound
 
 Variables          # str, int, float, bool
 print()            # نمایش خروجی
