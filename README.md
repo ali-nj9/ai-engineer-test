@@ -51,5 +51,27 @@ float() / int()    # تبدیل نوع
 
 
 
+## روز ۲ — Conditions + Loops
 
+### مفاهیم یاد گرفته شده:
+- if / elif / else
+- Comparison operators
+- Logical operators
+- for loop
+- while loop
+- range()
+- break / continue
+- nested loops
+
+### تمرین‌های انجام شده:
+1. Score Checker
+2. Prime Number Checker
+3. Factorial Calculator
+4. Fibonacci Sequence
+5. Number Guessing Game
+6. Multiplication Table
+7. Star Pattern
+8. Password Checker
+9. Simple ATM
+10. Email Validation
 
