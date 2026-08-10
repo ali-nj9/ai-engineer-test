@@ -231,23 +231,23 @@
 #     print("kahata : vorodi na mo tabar ast")
 
 
-principal = float(input("mablagh avalye ra vared konid : "))
-rate = float(input("adad nerkh sod salane mad nazar ra vared konid %  : ")) / 100
-years = int(input("adad sal mad nazar ra vared konid : "))
+# principal = float(input("mablagh avalye ra vared konid : "))
+# rate = float(input("adad nerkh sod salane mad nazar ra vared konid %  : ")) / 100
+# years = int(input("adad sal mad nazar ra vared konid : "))
 
-print(f"principal : {principal :.2f}")
-print(f"Rate : {rate  * 100}%")
-print(f"Years : {years}")
+# print(f"principal : {principal :.2f}")
+# print(f"Rate : {rate  * 100}%")
+# print(f"Years : {years}")
 
-Simple_profit = principal * rate * years
-Total_Simple = principal + Simple_profit
+# Simple_profit = principal * rate * years
+# Total_Simple = principal + Simple_profit
 
 
-Total_Compound = principal * (1 + rate) ** years
-Compound_profit = Total_Compound - principal
+# Total_Compound = principal * (1 + rate) ** years
+# Compound_profit = Total_Compound - principal
 
-print(f"Simple profit : {Simple_profit :.2f}")
-print(f"Total Simple : {Total_Simple :.2f}")
-print("---")
-print(f"Total_Compound : {Total_Compound :.2f}")
-print(f"Compoundprofit : {Compound_profit :.2f}")
+# print(f"Simple profit : {Simple_profit :.2f}")
+# print(f"Total Simple : {Total_Simple :.2f}")
+# print("---")
+# print(f"Total_Compound : {Total_Compound :.2f}")
+# print(f"Compoundprofit : {Compound_profit :.2f}")
