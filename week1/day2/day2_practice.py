@@ -274,45 +274,45 @@
 #         print("Invalid option.")
 
 
-print("------exercise10------")
+# print("------exercise10------")
 
-email = input("type your email : ")
+# email = input("type your email : ")
 
-is_valid = True
+# is_valid = True
 
-if email == "":
-    print("1. خالی نباشد")
-    is_valid = False
+# if email == "":
+#     print("1. خالی نباشد")
+#     is_valid = False
 
-if " " in email:
-    print("2. فاصله نداشته باشد")
-    is_valid = False
+# if " " in email:
+#     print("2. فاصله نداشته باشد")
+#     is_valid = False
 
-if not "@" in email:
-    print("3. @ داشته باشد")
-    is_valid = False
+# if not "@" in email:
+#     print("3. @ داشته باشد")
+#     is_valid = False
 
-if "@" in email:
-    parts = email.split("@")
+# if "@" in email:
+#     parts = email.split("@")
 
-    local_part = parts[0]
-    domain_part = parts[1]
+#     local_part = parts[0]
+#     domain_part = parts[1]
 
-    if local_part == "":
-        print("4. قبل از @ حداقل 1 کاراکتر داشته باشد")
-        is_valid = False
+#     if local_part == "":
+#         print("4. قبل از @ حداقل 1 کاراکتر داشته باشد")
+#         is_valid = False
 
-    if "." not in domain_part:
-        print("5. بعد از @ یک . داشته باشد")
-        is_valid = False
+#     if "." not in domain_part:
+#         print("5. بعد از @ یک . داشته باشد")
+#         is_valid = False
 
-    if "." in domain_part:
-        domain_parts = domain_part.split(".")
-        extension = domain_parts[-1]
+#     if "." in domain_part:
+#         domain_parts = domain_part.split(".")
+#         extension = domain_parts[-1]
 
-        if len(extension) < 2:
-            print("6. بعد از آخرین . حداقل 2 کاراکتر داشته باشد")
-            is_valid = False
+#         if len(extension) < 2:
+#             print("6. بعد از آخرین . حداقل 2 کاراکتر داشته باشد")
+#             is_valid = False
 
-if is_valid:
-    print("Valid email.")
+# if is_valid:
+#     print("Valid email.")
