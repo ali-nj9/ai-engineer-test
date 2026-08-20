@@ -166,3 +166,127 @@ Daily Python practice on a 75-day journey to become an **LLM & AI Agent Engineer
 
 - Strengthen problem-solving and debugging skills.  
   قوی‌تر کردن مهارت حل مسئله و دیباگ کردن.
+
+## Day 3 — Lists + Tuples + Dictionaries + Sets
+
+### Concepts | مفاهیم
+- Lists: creation, indexing, slicing  
+  لیست‌ها: ساخت، ایندکس‌گذاری، برش‌زنی
+
+- List methods: `append()`, `extend()`, `insert()`, `remove()`, `pop()`, `sort()`, `reverse()`, `count()`, `index()`  
+  متدهای لیست: اضافه‌کردن، گسترش، درج، حذف، بیرون‌کشیدن، مرتب‌سازی، معکوس‌کردن، شمارش، یافتن ایندکس
+
+- List comprehension for concise list creation  
+  List comprehension برای ساخت سریع و فشرده‌ی لیست
+
+- Tuples: creation, unpacking, immutability vs lists  
+  تاپل‌ها: ساخت، بازکردن مقادیر، تفاوت تغییرناپذیری با لیست
+
+- Dictionaries: creation, key-value access, `keys()`, `values()`, `items()`, `get()`, `update()`, `pop()`  
+  دیکشنری‌ها: ساخت، دسترسی با کلید-مقدار و متدهای اصلی
+
+- Sets: creation, `add()`, `remove()`, `union()`, `intersection()`, `difference()`  
+  مجموعه‌ها: ساخت، اضافه و حذف، اجتماع، اشتراک، تفاضل
+
+- Nested structures: lists inside dictionaries and dictionaries inside lists  
+  ساختارهای تودرتو: لیست داخل دیکشنری و دیکشنری داخل لیست
+
+- Iterating over lists, dictionaries, and sets with `for` loops  
+  پیمایش لیست، دیکشنری و مجموعه با حلقه `for`
+
+- Custom implementation of `max`, `min`, `sum`, and Bubble Sort without built-in functions  
+  پیاده‌سازی دستی بزرگ‌ترین، کوچک‌ترین، مجموع و مرتب‌سازی حبابی بدون توابع آماده
+
+- Building CLI programs with menus and dictionaries  
+  ساخت برنامه‌های خط فرمان با منو و دیکشنری
+
+### Exercises | تمرین‌ها
+1. List Statistics & Bubble Sort
+2. List Set Operations (Without `set`)
+3. Student Grades Dictionary
+4. Word Frequency Counter
+5. 3×3 Matrix Operations
+6. Phone Book (CLI)
+7. Shopping Cart
+
+---
+
+### Reflection | مرور شخصی
+
+#### What I Learned | چه چیزهایی یاد گرفتم
+- I learned how to create and manipulate lists using methods like `append()`, `insert()`, `remove()`, `pop()`, `sort()`, and `reverse()`.  
+  یاد گرفتم چطور لیست بسازم و با متدهایی مثل `append()`، `insert()`، `remove()`، `pop()`، `sort()` و `reverse()` آن‌ها را تغییر بدهم.
+
+- I learned how to access and slice list elements using indexing like `my_list[0]`, `my_list[-1]`, and `my_list[1:4]`.  
+  یاد گرفتم چطور با ایندکس‌گذاری مثل `my_list[0]`، `my_list[-1]` و `my_list[1:4]` به عناصر لیست دسترسی پیدا کنم و برش بزنم.
+
+- I learned how to implement `max`, `min`, `sum`, and Bubble Sort from scratch without using built-in functions.  
+  یاد گرفتم چطور `max`، `min`، `sum` و مرتب‌سازی حبابی را از صفر و بدون توابع آماده پیاده‌سازی کنم.
+
+- I learned the difference between lists and tuples and why tuples are immutable.  
+  یاد گرفتم تفاوت لیست و تاپل چیست و چرا تاپل‌ها تغییرناپذیر هستند.
+
+- I learned how to unpack tuple values into separate variables like `a, b, c = (1, 2, 3)`.  
+  یاد گرفتم چطور مقادیر تاپل را در متغیرهای جداگانه باز کنم مثل `a, b, c = (1, 2, 3)`.
+
+- I learned how to create and use dictionaries with key-value pairs and methods like `keys()`, `values()`, `items()`, `get()`, and `update()`.  
+  یاد گرفتم چطور دیکشنری بسازم و با جفت‌های کلید-مقدار و متدهایی مثل `keys()`، `values()`، `items()`، `get()` و `update()` کار کنم.
+
+- I learned how to use sets for removing duplicates and performing union, intersection, and difference operations.  
+  یاد گرفتم چطور از مجموعه‌ها برای حذف تکراری‌ها و انجام عملیات اجتماع، اشتراک و تفاضل استفاده کنم.
+
+- I learned how to simulate set operations like intersection, union, and difference using only lists and loops.  
+  یاد گرفتم چطور عملیات مجموعه‌ای مثل اشتراک، اجتماع و تفاضل را فقط با لیست و حلقه شبیه‌سازی کنم.
+
+- I learned how to build nested structures like a list of dictionaries for a shopping cart or a dictionary of lists.  
+  یاد گرفتم چطور ساختارهای تودرتو مثل لیستی از دیکشنری‌ها برای سبد خرید یا دیکشنری‌ای از لیست‌ها بسازم.
+
+- I learned how to count word frequencies in a sentence and store the result in a dictionary.  
+  یاد گرفتم چطور تعداد تکرار کلمات یک جمله را بشمارم و نتیجه را در دیکشنری ذخیره کنم.
+
+- I learned how to build a full CLI program with a menu system, like a phone book and a shopping cart.  
+  یاد گرفتم چطور یک برنامه‌ی کامل خط فرمان با سیستم منو بسازم، مثل دفترچه تلفن و سبد خرید.
+
+- I learned how to work with 2D lists to represent matrices and perform matrix addition and scalar multiplication.  
+  یاد گرفتم چطور با لیست‌های دوبعدی ماتریس بسازم و جمع ماتریس‌ها و ضرب عددی را انجام بدهم.
+
+#### Challenges | چالش‌ها
+- Implementing Bubble Sort from scratch was confusing at first because I had to understand nested loops and swapping logic.  
+  پیاده‌سازی مرتب‌سازی حبابی از صفر در ابتدا گیج‌کننده بود چون باید حلقه‌های تو در تو و منطق جابه‌جایی را درک می‌کردم.
+
+- I struggled with the difference between `remove()`, `pop()`, and `del` for lists and when to use each one.  
+  در تفاوت بین `remove()`، `pop()` و `del` برای لیست‌ها و اینکه کی از هرکدام استفاده کنم مشکل داشتم.
+
+- Understanding dictionary `.get()` vs direct key access `dict[key]` and when `.get()` prevents errors took some practice.  
+  فهمیدن تفاوت `.get()` با دسترسی مستقیم `dict[key]` و اینکه `.get()` کی از خطا جلوگیری می‌کند نیاز به تمرین داشت.
+
+- Building nested structures like a list of dictionaries was hard to visualize and debug at first.  
+  ساختن ساختارهای تودرتو مثل لیستی از دیکشنری‌ها در ابتدا برای تجسم و دیباگ کردن سخت بود.
+
+- Simulating set operations using only lists and loops required careful logic to avoid duplicates.  
+  شبیه‌سازی عملیات مجموعه‌ای فقط با لیست و حلقه نیاز به منطق دقیق برای جلوگیری از تکرار داشت.
+
+- Keeping track of data types inside nested structures (e.g., a dictionary value that is a list of dictionaries) was mentally challenging.  
+  پیگیری نوع داده‌ها داخل ساختارهای تودرتو (مثلاً مقداری در دیکشنری که خودش لیستی از دیکشنری‌هاست) از نظر ذهنی چالش‌برانگیز بود.
+
+- Building the phone book CLI taught me that handling edge cases like duplicate names, empty input, and case-insensitive search adds a lot of complexity.  
+  ساخت دفترچه تلفن CLI به من یاد داد که مدیریت حالت‌های خاص مثل نام تکراری، ورودی خالی و جست‌وجوی بدون حساسیت به حروف بزرگ و کوچک پیچیدگی زیادی اضافه می‌کند.
+
+#### Next Step | قدم بعدی
+- Learn functions to organize and reuse code instead of writing everything in one long block.  
+  یاد گرفتن توابع برای سازمان‌دهی و استفاده‌ی مجدد از کد به‌جای نوشتن همه‌چیز در یک بلوک بلند.
+
+- Learn how to handle errors with `try / except` to make programs more robust.  
+  یاد گرفتن مدیریت خطا با `try / except` برای مقاوم‌تر کردن برنامه‌ها.
+
+- Practice more with nested data structures and real-world data like JSON.  
+  تمرین بیشتر با ساختارهای داده‌ی تودرتو و داده‌های واقعی مثل JSON.
+
+- Learn how to read from and write to files to save program data permanently.  
+  یاد گرفتن خواندن از فایل و نوشتن در فایل برای ذخیره‌ی دائمی داده‌های برنامه.
+
+- Start combining everything (loops, conditions, lists, dictionaries, functions) into bigger projects.  
+  شروع ترکیب همه‌چیز (حلقه‌ها، شرط‌ها، لیست‌ها، دیکشنری‌ها، توابع) در پروژه‌های بزرگ‌تر.
+
+- Keep building one CLI project per day to strengthen problem-solving skills.  
+  ادامه دادن ساخت یک پروژه‌ی CLI در روز برای تقویت مهارت حل مسئله.
