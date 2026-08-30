@@ -290,3 +290,158 @@ Daily Python practice on a 75-day journey to become an **LLM & AI Agent Engineer
 
 - Keep building one CLI project per day to strengthen problem-solving skills.  
   ادامه دادن ساخت یک پروژه‌ی CLI در روز برای تقویت مهارت حل مسئله.
+
+## Day 4 — Functions + OOP Basics
+
+### Concepts | مفاهیم
+- Functions: `def`, parameters, `return`, default values  
+  توابع: تعریف، پارامترها، برگرداندن مقدار، مقادیر پیش‌فرض
+
+- Difference between `print()` and `return`  
+  تفاوت بین `print()` (نمایش) و `return` (برگرداندن مقدار به کد)
+
+- `*args` for unlimited positional arguments (stored as tuple)  
+  `*args` برای دریافت تعداد نامحدود ورودی‌های موقعیتی (ذخیره به‌صورت تاپل)
+
+- `**kwargs` for unlimited keyword arguments (stored as dictionary)  
+  `**kwargs` برای دریافت تعداد نامحدود ورودی‌های کلیددار (ذخیره به‌صورت دیکشنری)
+
+- Variable scope: local vs global  
+  محدوده متغیرها: محلی (داخل تابع) در مقابل سراسری (بیرون تابع)
+
+- Lambda functions for short, one-line operations  
+  توابع لامبدا برای عملیات کوتاه و تک‌خطی
+
+- `map()` to apply a function to every item in a list  
+  `map()` برای اعمال یک تابع روی تک‌تک اعضای لیست
+
+- `filter()` to select items based on a condition  
+  `filter()` برای فیلتر کردن اعضا بر اساس یک شرط
+
+- `sorted()` with `key` and `lambda` for custom sorting  
+  `sorted()` با `key` و `lambda` برای مرتب‌سازی سفارشی
+
+- OOP: Classes as blueprints, Objects as real instances  
+  شیءگرایی: کلاس به‌عنوان نقشه، شیء به‌عنوان نمونه واقعی
+
+- `__init__` constructor for initializing object attributes  
+  متد سازنده `__init__` برای مقداردهی اولیه ویژگی‌های شیء
+
+- `self` keyword: refers to the current object instance  
+  کلمه کلیدی `self`: اشاره به همان شیء‌ای که متد روی آن صدا زده شده
+
+- Instance attributes vs class attributes (mutable default trap)  
+  ویژگی‌های نمونه در مقابل ویژگی‌های کلاس (تله مقدار پیش‌فرض تغییرپذیر)
+
+- Methods: functions inside a class that operate on `self`  
+  متدها: توابع داخل کلاس که روی `self` عمل می‌کنند
+
+- `__str__` magic method for readable object printing  
+  متد جادویی `__str__` برای نمایش خوانای شیء هنگام پرینت
+
+- Object interaction: methods that accept other objects as arguments  
+  تعامل اشیاء: متدهایی که شیءهای دیگر را به‌عنوان ورودی می‌پذیرند
+
+- Recursion: a function calling itself for nested structures  
+  بازگشت (Recursion): تابعی که خودش را صدا می‌زند برای ساختارهای تودرتو
+
+- `isinstance()` to check the type of a variable  
+  `isinstance()` برای بررسی نوع داده یک متغیر
+
+- `raise ValueError()` for custom error handling  
+  `raise ValueError()` برای تولید خطای سفارشی
+
+### Exercises | تمرین‌ها
+1. `is_prime(n)` — Prime number checker function
+2. `fibonacci(n)` — Generate Fibonacci sequence as a list
+3. `count_words(text)` — Word frequency counter using dictionary
+4. `validate_password(password)` — Password strength validator returning dict
+5. `calculator(a, b, operation)` — Smart calculator with error handling
+6. `flatten(nested_list)` — Flatten nested lists using recursion
+7. `BankAccount` class — Full banking system with deposit, withdraw, transfer, and transaction history
+8. `Book` + `Library` classes — Library management with search, add, remove, and object interaction
+
+---
+
+### Reflection | مرور شخصی
+
+#### What I Learned | چه چیزهایی یاد گرفتم
+- I learned how to define functions with `def`, pass parameters, and use `return` to send values back to the caller.  
+  یاد گرفتم چطور با `def` تابع تعریف کنم، پارامتر بفرستم و با `return` مقدار را به فراخوان برگردانم.
+
+- I learned the critical difference between `print()` (display only) and `return` (send value back for further use).  
+  یاد گرفتم تفاوت حیاتی بین `print()` (فقط نمایش) و `return` (برگرداندن مقدار برای استفاده بعدی) چیست.
+
+- I learned how to use `*args` to accept any number of positional arguments and `**kwargs` for keyword arguments.  
+  یاد گرفتم چطور با `*args` تعداد نامحدود ورودی موقعیتی و با `**kwargs` ورودی‌های کلیددار دریافت کنم.
+
+- I learned how `.get(key, default)` works on dictionaries and why it prevents `KeyError`.  
+  یاد گرفتم `.get(key, default)` روی دیکشنری چطور کار می‌کند و چرا از `KeyError` جلوگیری می‌کند.
+
+- I learned how to use lambda functions with `map()`, `filter()`, and `sorted()` for concise data processing.  
+  یاد گرفتم چطور از توابع لامبدا با `map()`، `filter()` و `sorted()` برای پردازش فشرده داده‌ها استفاده کنم.
+
+- I learned what a class is (blueprint) and what an object is (real instance built from that blueprint).  
+  یاد گرفتم کلاس چیست (نقشه ساخت) و شیء چیست (نمونه واقعی ساخته‌شده از آن نقشه).
+
+- I learned how `__init__` automatically runs when a new object is created and how `self` refers to the current object.  
+  یاد گرفتم `__init__` چطور به‌صورت خودکار هنگام ساخت شیء جدید اجرا می‌شود و `self` به شیء فعلی اشاره می‌کند.
+
+- I learned that `self` is relative — it changes depending on which object calls the method.  
+  یاد گرفتم `self` نسبی است و بسته به اینکه کدام شیء متد را صدا بزند، تغییر می‌کند.
+
+- I learned the dangerous trap of mutable default arguments (like `transactions=[]`) and why lists should be created inside `__init__`.  
+  یاد گرفتم تله خطرناک آرگومان‌های پیش‌فرض تغییرپذیر (مثل `transactions=[]`) و اینکه چرا لیست‌ها باید داخل `__init__` ساخته شوند.
+
+- I learned how objects can interact with each other, like transferring money between two `BankAccount` objects.  
+  یاد گرفتم اشیاء چطور می‌توانند با هم تعامل کنند، مثل انتقال پول بین دو شیء `BankAccount`.
+
+- I learned how to search inside a list of objects by looping and checking each object's attributes (e.g., `book.isbn`).  
+  یاد گرفتم چطور داخل لیستی از اشیاء با حلقه و بررسی ویژگی هر شیء (مثلاً `book.isbn`) جست‌وجو کنم.
+
+- I learned how recursion works by having a function call itself to handle nested structures like `flatten()`.  
+  یاد گرفتم بازگشت (Recursion) چطور با صدا زدن خودِ تابع برای مدیریت ساختارهای تودرتو مثل `flatten()` کار می‌کند.
+
+- I learned how to raise custom errors with `raise ValueError()` for invalid inputs.  
+  یاد گرفتم چطور با `raise ValueError()` برای ورودی‌های نامعتبر خطای سفارشی تولید کنم.
+
+#### Challenges | چالش‌ها
+- Understanding why `return` is different from `print` was confusing at first — I kept using `print` inside functions instead of `return`.  
+  فهمیدن تفاوت `return` با `print` در ابتدا گیج‌کننده بود و مدام داخل توابع به‌جای `return` از `print` استفاده می‌کردم.
+
+- I struggled with the `*args` and `**kwargs` syntax and understanding that `*args` creates a tuple while `**kwargs` creates a dictionary.  
+  در فهم سینتکس `*args` و `**kwargs` و اینکه `*args` تاپل می‌سازد و `**kwargs` دیکشنری، مشکل داشتم.
+
+- The concept of `self` in OOP was the hardest part — I didn't understand why it changes depending on which object calls the method.  
+  مفهوم `self` در شیءگرایی سخت‌ترین بخش بود و نمی‌فهمیدم چرا بسته به شیء فراخوان تغییر می‌کند.
+
+- I confused class attributes (defined outside `__init__`) with instance attributes (defined inside `__init__`) and created a shared-list bug.  
+  ویژگی‌های کلاس (بیرون `__init__`) را با ویژگی‌های نمونه (داخل `__init__`) اشتباه گرفتم و باگ لیست مشترک ایجاد کردم.
+
+- Searching inside a list of objects was tricky — I tried `"222" in self.books` instead of looping and checking `book.isbn`.  
+  جست‌وجو در لیست اشیاء چالش‌برانگیز بود و به‌جای حلقه و چک کردن `book.isbn`، از `"222" in self.books` استفاده کردم.
+
+- Understanding recursion in `flatten()` required visualizing how each function call creates a new layer and returns results back up.  
+  فهم بازگشت در `flatten()` نیاز به تجسم این داشت که هر فراخوان تابع یک لایه جدید می‌سازد و نتایج را به بالا برمی‌گرداند.
+
+- I had a typo bug where I wrote `self.transaction` instead of `self.transactions` and spent time debugging it.  
+  یک باگ تایپی داشتم که `self.transaction` به‌جای `self.transactions` نوشته بودم و وقت زیادی برای دیباگ آن صرف کردم.
+
+#### Next Step | قدم بعدی
+- Practice more OOP by building larger systems with multiple interacting classes.  
+  تمرین بیشتر شیءگرایی با ساخت سیستم‌های بزرگ‌تر با چندین کلاس تعاملی.
+
+- Learn OOP pillars: inheritance, encapsulation, polymorphism, and abstraction.  
+  یادگیری ستون‌های شیءگرایی: ارث‌بری، کپسوله‌سازی، چندشکلی و انتزاع.
+
+- Learn `try / except` for proper error handling in functions and methods.  
+  یادگیری `try / except` برای مدیریت صحیح خطا در توابع و متدها.
+
+- Learn how to read and write files to persist data between program runs.  
+  یادگیری خواندن و نوشتن فایل برای ذخیره داده‌ها بین اجرای برنامه‌ها.
+
+- Start working with external libraries and `pip install` for real-world projects.  
+  شروع کار با کتابخانه‌های خارجی و `pip install` برای پروژه‌های واقعی.
+
+- Keep building one OOP project per day to solidify class design skills.  
+  ادامه دادن ساخت یک پروژه شیءگرا در روز برای تثبیت مهارت طراحی کلاس.  
