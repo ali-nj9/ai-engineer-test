@@ -445,3 +445,108 @@ Daily Python practice on a 75-day journey to become an **LLM & AI Agent Engineer
 
 - Keep building one OOP project per day to solidify class design skills.  
   ادامه دادن ساخت یک پروژه شیءگرا در روز برای تثبیت مهارت طراحی کلاس.  
+
+  ---
+
+## Day 5 — File I/O + JSON + Error Handling + Modules
+
+### Concepts | مفاهیم
+- File handling with `open()` in modes: `"r"` (read), `"w"` (overwrite), `"a"` (append)  
+  کار با فایل‌ها با تابع `open()` در حالت‌های خواندن، بازنویسی و افزودن به انتها
+
+- Safe file handling using the `with` statement (automatic resource closing)  
+  مدیریت امن فایل‌ها با استفاده از دستور `with` (بستن خودکار فایل‌ها)
+
+- UTF-8 encoding for proper Persian and multi-language text storage  
+  استفاده از `encoding="utf-8"` برای ذخیره و خواندن بدون مشکل زبان فارسی
+
+- JSON serialization and deserialization: `json.dump()`, `json.load()`, `json.dumps()`, `json.loads()`  
+  تبدیل ساختارهای پایتون به فرمت JSON و برعکس با ۴ متد اصلی ماژول `json`
+
+- The `to_dict()` and `@classmethod from_dict()` pattern for bridging OOP and JSON  
+  الگوی مترجم دوطرفه بین اشیاء کلاس و دیکشنری‌های JSON
+
+- Date and time manipulation with the `datetime` module and `.strftime()` formatting  
+  کار با تاریخ و ساعت سیستم با ماژول `datetime` و فرمت‌بندی سفارشی با `.strftime()`
+
+- Robust error handling: `try / except / else / finally`  
+  مدیریت پیشرفته و اصولی خطاها با بلوک چهارگانه
+
+- Creating and raising Custom Exceptions inheriting from `Exception`  
+  ساخت و شلیک خطاهای سفارشی و اختصاصی برنامه
+
+- Logging system errors with timestamps in `.log` files  
+  ثبت گزارش خطاها و رویدادهای سیستم به همراه تاریخ و ساعت در فایل لاگ
+
+- Reading sensitive data securely via Environment Variables (`os.environ.get()`)  
+  خواندن داده‌های حساس و محرمانه از متغیرهای محیطی سیستم‌عامل
+
+- Software architecture patterns: Manager Pattern and Single Responsibility Principle (SRP)  
+  آشنایی با الگوهای معماری نرم‌افزار: الگوی Manager و اصل تک‌مسئولیتی
+
+### Exercises | تمرین‌ها
+1. `notes_app.py` — Notes manager with timestamps and file persistence
+2. `products_crud.py` — Full JSON-based CRUD system with auto-increment IDs
+3. `error_logger.py` — Safe JSON reader with custom exception and error logging
+4. `todo_app.py` (Final Project) — Complete CLI To-Do App using OOP (`Task`, `TaskManager`), JSON persistence, and input validation
+
+---
+
+### Reflection | مرور شخصی
+
+#### What I Learned | چه چیزهایی یاد گرفتم
+- I learned how to read, write, and append text files safely using `with open()`.  
+  یاد گرفتم چطور با دستور `with open()` فایل‌های متنی را بخوانم، بازنویسی کنم و داده‌های جدید به آن‌ها اضافه کنم.
+
+- I learned the difference between Python dictionaries and JSON format, and how to use `json.dump` and `json.load`.  
+  یاد گرفتم تفاوت دیکشنری‌های پایتون با فرمت JSON چیست و چطور داده‌ها را در فایل JSON ذخیره و بازیابی کنم.
+
+- I learned how to bridge OOP and JSON using `to_dict()` for saving and `@classmethod from_dict()` for loading objects.  
+  یاد گرفتم چطور با متد `to_dict()` برای ذخیره و `@classmethod from_dict()` برای بارگذاری، بین اشیاء پایتون و JSON ارتباط برقرار کنم.
+
+- I learned how to work with the `datetime` module to capture current timestamps and format them cleanly with `.strftime()`.  
+  یاد گرفتم چطور با ماژول `datetime` زمان فعلی سیستم را ثبت کنم و با `.strftime()` آن را فرمت‌بندی کنم.
+
+- I learned how to catch and handle specific exceptions like `FileNotFoundError` and `json.JSONDecodeError` without crashing the program.  
+  یاد گرفتم چطور خطاهای مشخصی مثل نبودن فایل یا خرابی JSON را بدون کرش کردن برنامه مهار کنم.
+
+- I learned how to create custom exceptions inheriting from `Exception` and raise them when needed.  
+  یاد گرفتم چطور با ارث‌بری از `Exception` خطاهای اختصاصی بسازم و با دستور `raise` آن‌ها را صادر کنم.
+
+- I learned how to build a complete CRUD (Create, Read, Update, Delete) system with automatic unique ID generation.  
+  یاد گرفتم چطور یک سیستم کامل CRUD به همراه تولید خودکار و هوشمند ID بسازم.
+
+- I learned how to separate responsibilities into dedicated classes like `Task` (data model) and `TaskManager` (business logic).  
+  یاد گرفتم چطور مسئولیت‌ها را در کلاس‌های تفکیک‌شده مانند `Task` (مدل داده) و `TaskManager` (منطق برنامه) سازمان‌دهی کنم.
+
+#### Challenges | چالش‌ها
+- Understanding why `@classmethod` is needed for `from_dict()` took deep conceptual understanding of class vs instance references.  
+  فهمیدن اینکه چرا `from_dict()` به `@classmethod` نیاز دارد و تفاوت بین ارجاع به کلاس (`cls`) و نمونه شیء (`self`) چالش‌برانگیز بود.
+
+- I struggled with accidentally trying to call `.append()` on a dictionary instead of a list when working with JSON data.  
+  در ابتدا اشتباهاً متد `.append()` را روی دیکشنری به جای لیست صدا می‌زدم که با خطا مواجه شد و منطق آن را اصلاح کردم.
+
+- Understanding list slicing with `[start:end]` and indexing in pagination required careful mental mapping.  
+  درک برش لیست‌ها با `[start:end]` و تفاوت شماره آیتم‌ها با ایندکس‌ها در صفحه‌بندی نیاز به دقت و بررسی فریم‌به‌فریم داشت.
+
+- Catching errors properly in the right order (specific exceptions before general ones) was an important lesson in error handling.  
+  ترتیب درست چیدن `except`ها (خطاهای خاص قبل از خطاهای عمومی) نکته مهمی بود که در ساخت سیستم خواندن امن فایل یاد گرفتم.
+
+- Preventing mutable default arguments in `__init__` (avoiding `tasks=[]`) was a critical bug that I analyzed and fixed.  
+  جلوگیری از قرار دادن لیست خالی در ورودی‌های پیش‌فرض `__init__` باگ مهمی بود که آن را ریشه‌یابی و برطرف کردم.
+
+#### Next Step | قدم بعدی
+- Learn Intermediate Python: Generators, Iterators, and Decorators in depth.  
+  یادگیری پایتون سطح متوسط: درک عمیق جنریتورها، ایتراتورها و دکوراتورها.
+
+- Practice testing code with `pytest` and writing automated unit tests.  
+  تمرین تست‌نویسی خودکار با فریم‌ورک `pytest` برای توابع و کلاس‌ها.
+
+- Learn about Virtual Environments, `requirements.txt`, and package management with `pip`.  
+  یادگیری محیط‌های مجازی پایتون، فایل `requirements.txt` و مدیریت پکیج‌ها با `pip`.
+
+- Explore external libraries and building HTTP clients for API interactions.  
+  شروع کار با کتابخانه‌های خارجی و ارسال درخواست‌های HTTP به APIها.
+
+- Keep pushing code and commits daily to GitHub with standard commit messages.  
+  ادامه دادن به کامیت و پوش روزانه پروژه‌ها به گیت‌هاب با پیام‌های استاندارد.

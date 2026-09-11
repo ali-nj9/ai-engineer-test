@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Ali",
+        "age": 23,
+        "grades": [
+            20,
+            18,
+            19
+        ],
+        "is_passed": true
+    },
+    {
+        "name": "sara",
+        "age": 20,
+        "grades": [
+            20,
+            18,
+            15
+        ],
+        "is_passed": true
+    }
+]
